@@ -1,0 +1,111 @@
+{
+    "buses": {
+        "1": {
+            "bus_type": 3,
+            "base_kv": 1,
+            "v_min": 1,
+            "v_max": 1
+        },
+        "2": {
+            "bus_type": 1,
+            "base_kv": 1,
+            "v_min": 0.95,
+            "v_max": 1.05
+        },
+        "3": {
+            "bus_type": 1,
+            "base_kv": 1,
+            "v_min": 0.95,
+            "v_max": 1.05
+        },
+        "4": {
+            "bus_type": 1,
+            "base_kv": 1,
+            "v_min": 0.95,
+            "v_max": 1.05
+        }
+    },
+    "branches": {
+        "1": {
+            "f_bus": 1,
+            "t_bus": 2,
+            "r": 0.0175,
+            "x": 0.035,
+            "b_fr": 0,
+            "b_to": 0,
+            "i_max": 1,
+            "type": "Line"
+        },
+        "2": {
+            "f_bus": 2,
+            "t_bus": 3,
+            "r": 0.035,
+            "x": 0.07,
+            "b_fr": 0,
+            "b_to": 0,
+            "i_max": 1,
+            "type": "Line"
+        },
+        "3": {
+            "f_bus": 2,
+            "t_bus": 4,
+            "r": 0.035,
+            "x": 0.07,
+            "b_fr": 0,
+            "b_to": 0,
+            "i_max": 1,
+            "type": "Line"
+        }
+    },
+    "gens": {
+        "1": {
+            "bus": 1,
+            "P_op": 0,
+            "Q_op": 0,
+            "P_min": -20,
+            "P_max": 20,
+            "Q_min": -20,
+            "Q_max": 20,
+            "type": "Slack"
+        }
+    },
+    "loads": {
+        "1": {
+            "bus": 3,
+            "P_op": 0.075,
+            "Q_op": 0.125,
+            "P_min": 0.075,
+            "P_max": 0.075,
+            "Q_min": 0.125,
+            "Q_max": 0.125,
+            "type": "Load"
+        },
+        "2": {
+            "bus": 4,
+            "P_op": 0.075,
+            "Q_op": 0.125,
+            "P_min": 0.075,
+            "P_max": 0.075,
+            "Q_min": 0.125,
+            "Q_max": 0.125,
+            "type": "Load"
+        }
+    },
+    "storages": {
+        "1": {
+            "bus": 3,
+            "P_op": 0,
+            "Q_op": 0,
+            "P_min": 0,
+            "P_max": 1.5,
+            "Q_min": -0.3,
+            "Q_max": 0.3,
+            "E_min": 0.1,
+            "E_max": 1,
+            "E_init": 0.5,
+            "eta": 0.95,
+            "tau": 1.6666666666666667,
+            "type": "BESS"
+        }
+    }
+}
